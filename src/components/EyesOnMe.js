@@ -2,12 +2,17 @@
 import React from 'react';
 
 class EyesOnMe extends React.Component{
-  fevent = () => {
-    console.log('Entering password...');
+  focusEvent = () => {
+    console.log('Good!');
+  }
+
+  blurEvent = () => {
+    console.log('Hey! Eyes on me!');
   }
   render(){
     return(
-      <input type="password" keyUp={this.pwd}/>
+      <button onBlur={this.blurEvent}>Click me!</button>
+        <button onFocus={this.focusEvent}>Click me!</button>
     )
   }
 }
