@@ -2,7 +2,7 @@
 import React from 'react';
 
 class EyesOnMe extends React.Component{
-  pwd = () => {
+  fevent = () => {
     console.log('Entering password...');
   }
   render(){
